@@ -1,7 +1,7 @@
 import React from 'react';
 import ChannelCard from '../channelCard/ChannelCard';
 import './ChannelBoard.css'
-const url = 'http://localhost:3001/channels';
+const url = 'https://ancient-spire-87533.herokuapp.com/channels';
 
 class ChannelBoard extends React.Component {
   constructor(props) {
