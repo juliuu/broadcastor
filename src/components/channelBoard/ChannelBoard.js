@@ -33,8 +33,13 @@ class ChannelBoard extends React.Component {
           ))}
         </div>
         <div>
-          <a href={'https://github.com/juliuu/broadcast-display/tree/master'} target="blank" className="mt-5">
-            {'Source code'}
+          <a href={'https://github.com/juliuu/broadcastor'} target="blank" className="mt-5">
+            {'FrontEnd'}
+          </a>
+        </div>
+        <div>
+          <a href={'https://github.com/juliuu/broadcastor-api'} target="blank" className="mt-5">
+            {'BackEnd'}
           </a>
         </div>
       </div>
