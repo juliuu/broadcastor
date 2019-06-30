@@ -1,24 +1,28 @@
 import React from 'react';
-import logo from './logo.svg';
+import Particles from 'react-particles-js';
+import Title from './components/title/Title';
+import ChannelBoard from './components/channelBoard/ChannelBoard';
 import './App.css';
 
-function App() {
+//Setting background component (<Particles />) options
+const particleOptions = {
+  particles: {
+    number: {
+      value: 30,
+      density: {
+        enable: true,
+        value_area: 80
+      }
+    }
+  }
+}
+
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Particles className="particles" params={particleOptions}/>
+      <Title />
+      <ChannelBoard />
     </div>
   );
 }
